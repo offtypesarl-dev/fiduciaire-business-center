@@ -54,7 +54,7 @@ export default function Header() {
             />
             <span className="flex flex-col leading-none">
               <span className="font-display text-[18px] font-extrabold text-navy-900 sm:text-[19px]">
-                Fiduciaire <span className="text-brand">&amp;</span> Business Center
+                Fiduciaire <span className="text-brand-ink">&amp;</span> Business Center
               </span>
               <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-navy-900/50">
                 S.A.R.L · El Jadida
@@ -67,7 +67,7 @@ export default function Header() {
               <a
                 key={l.href}
                 href={l.href}
-                className="text-[15px] font-medium text-navy-900/80 transition-colors hover:text-brand"
+                className="text-[15px] font-medium text-navy-900/80 transition-colors hover:text-brand-ink"
               >
                 {l.label}
               </a>
@@ -79,7 +79,7 @@ export default function Header() {
               <button
                 onClick={() => setLang("fr")}
                 className={`rounded-full px-3 py-1.5 transition-colors ${
-                  lang === "fr" ? "bg-brand text-white" : "text-navy-900/60"
+                  lang === "fr" ? "bg-brand text-navy-900" : "text-navy-900/60"
                 }`}
               >
                 FR
@@ -87,7 +87,7 @@ export default function Header() {
               <button
                 onClick={() => setLang("en")}
                 className={`rounded-full px-3 py-1.5 transition-colors ${
-                  lang === "en" ? "bg-brand text-white" : "text-navy-900/60"
+                  lang === "en" ? "bg-brand text-navy-900" : "text-navy-900/60"
                 }`}
               >
                 EN
@@ -96,7 +96,7 @@ export default function Header() {
 
             <a
               href={`tel:${business.primaryPhone}`}
-              className="hidden items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-dark md:inline-flex"
+              className="hidden items-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-navy-900 transition-colors hover:bg-brand-dark md:inline-flex"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
@@ -133,7 +133,7 @@ export default function Header() {
                 <button
                   onClick={() => setLang("fr")}
                   className={`rounded-full px-4 py-2 text-sm font-bold ${
-                    lang === "fr" ? "bg-brand text-white" : "bg-navy-50 text-navy-900"
+                    lang === "fr" ? "bg-brand text-navy-900" : "bg-navy-50 text-navy-900"
                   }`}
                 >
                   FR
@@ -141,14 +141,14 @@ export default function Header() {
                 <button
                   onClick={() => setLang("en")}
                   className={`rounded-full px-4 py-2 text-sm font-bold ${
-                    lang === "en" ? "bg-brand text-white" : "bg-navy-50 text-navy-900"
+                    lang === "en" ? "bg-brand text-navy-900" : "bg-navy-50 text-navy-900"
                   }`}
                 >
                   EN
                 </button>
                 <a
                   href={`tel:${business.primaryPhone}`}
-                  className="ml-auto text-sm font-bold text-brand"
+                  className="ml-auto text-sm font-bold text-brand-ink"
                 >
                   {business.phones[0]}
                 </a>

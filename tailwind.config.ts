@@ -18,10 +18,11 @@ const config: Config = {
           950: "#081b30",
         },
         brand: {
-          DEFAULT: "#1f5fd6",
-          light: "#3b78e8",
-          dark: "#1a4fb3",
-          50: "#eef4fd",
+          DEFAULT: "#dac176", // logo gold — fills, paired with navy text
+          dark: "#b8924a", // deeper gold — fill hover (navy text stays readable)
+          ink: "#8a6b22", // deep gold — accent TEXT on light backgrounds
+          light: "#e4ce8e", // bright gold — accents on dark/navy backgrounds
+          50: "#faf4e4", // soft gold tint
         },
         accent: {
           green: "#1a8a48",

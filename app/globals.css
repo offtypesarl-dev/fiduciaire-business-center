@@ -18,7 +18,7 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:bg-brand-dark hover:shadow-lg;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-navy-900 transition-all hover:bg-brand-dark hover:shadow-lg;
   }
   .btn-outline {
     @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/40 px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:border-white hover:bg-white/10;
@@ -27,13 +27,13 @@ body {
     @apply py-20 md:py-24;
   }
   .eyebrow {
-    @apply mb-3 inline-block text-sm font-bold uppercase tracking-[0.18em] text-brand;
+    @apply mb-3 inline-block text-sm font-bold uppercase tracking-[0.18em] text-brand-ink;
   }
   .h-display {
     font-family: var(--font-poppins);
     @apply font-bold tracking-tight;
   }
   .learn-more {
-    @apply mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand transition-colors hover:text-brand-dark;
+    @apply mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink transition-colors hover:text-navy-900;
   }
 }

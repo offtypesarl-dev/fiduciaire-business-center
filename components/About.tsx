@@ -43,7 +43,7 @@ export default function About() {
           <h2 className="h-display text-3xl text-navy-900 md:text-[40px]">
             {t.about.title}
           </h2>
-          <p className="mt-4 text-xl font-semibold text-brand">{t.about.lead}</p>
+          <p className="mt-4 text-xl font-semibold text-brand-ink">{t.about.lead}</p>
           <div className="mt-6 space-y-4 leading-relaxed text-navy-900/70">
             <p>{t.about.p1}</p>
             <p>{t.about.p2}</p>

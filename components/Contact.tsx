@@ -53,7 +53,7 @@ export default function Contact() {
                   <a
                     key={p}
                     href={`tel:${p.replace(/\s/g, "")}`}
-                    className="block hover:text-brand"
+                    className="block hover:text-brand-ink"
                   >
                     {p}
                   </a>
@@ -66,7 +66,7 @@ export default function Contact() {
               >
                 <a
                   href={`mailto:${business.email}`}
-                  className="hover:text-brand break-all"
+                  className="hover:text-brand-ink break-all"
                 >
                   {business.email}
                 </a>
@@ -123,7 +123,7 @@ export default function Contact() {
                 {t.contact.formSubmit}
               </button>
               {sent && (
-                <p className="text-center text-sm text-brand">
+                <p className="text-center text-sm text-brand-ink">
                   ✓ {business.email}
                 </p>
               )}
@@ -149,7 +149,7 @@ function ContactRow({
 }) {
   return (
     <div className="flex gap-4">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand text-white">
+      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand text-navy-900">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d={icon} />
         </svg>

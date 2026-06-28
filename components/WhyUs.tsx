@@ -28,7 +28,7 @@ export default function WhyUs() {
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {t.why.items.map((it, i) => (
             <div key={i} className="text-center sm:text-left">
-              <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-brand text-white ring-1 ring-white/10 sm:mx-0">
+              <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-brand text-navy-900 ring-1 ring-white/10 sm:mx-0">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                   <path d={icons[i % icons.length]} />
                 </svg>

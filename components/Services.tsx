@@ -32,7 +32,7 @@ export default function Services() {
               key={i}
               className="group flex flex-col rounded-xl border border-navy-100 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-brand/30 hover:shadow-xl"
             >
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-brand-50 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-brand-50 text-brand-ink transition-colors group-hover:bg-brand group-hover:text-navy-900">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                   <path d={icons[i % icons.length]} />
                 </svg>
