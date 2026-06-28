@@ -30,7 +30,7 @@ export default function Contact() {
           {/* info */}
           <div>
             <span className="eyebrow">{t.contact.eyebrow}</span>
-            <h2 className="font-serif text-3xl font-bold text-navy-900 md:text-4xl">
+            <h2 className="h-display text-3xl text-navy-900 md:text-[40px]">
               {t.contact.title}
             </h2>
             <p className="mt-4 text-lg text-navy-900/60">
@@ -53,7 +53,7 @@ export default function Contact() {
                   <a
                     key={p}
                     href={`tel:${p.replace(/\s/g, "")}`}
-                    className="block hover:text-gold-dark"
+                    className="block hover:text-brand"
                   >
                     {p}
                   </a>
@@ -66,7 +66,7 @@ export default function Contact() {
               >
                 <a
                   href={`mailto:${business.email}`}
-                  className="hover:text-gold-dark break-all"
+                  className="hover:text-brand break-all"
                 >
                   {business.email}
                 </a>
@@ -116,14 +116,14 @@ export default function Contact() {
                   name="message"
                   required
                   rows={5}
-                  className="w-full rounded-lg border border-navy-100 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-gold focus:ring-1 focus:ring-gold"
+                  className="w-full rounded-lg border border-navy-100 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-brand focus:ring-1 focus:ring-brand"
                 />
               </div>
               <button type="submit" className="btn-primary w-full">
                 {t.contact.formSubmit}
               </button>
               {sent && (
-                <p className="text-center text-sm text-gold-dark">
+                <p className="text-center text-sm text-brand">
                   ✓ {business.email}
                 </p>
               )}
@@ -149,7 +149,7 @@ function ContactRow({
 }) {
   return (
     <div className="flex gap-4">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-navy-900 text-gold">
+      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-brand text-white">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
           <path d={icon} />
         </svg>
@@ -184,7 +184,7 @@ function Field({
         type={type}
         name={name}
         required={required}
-        className="w-full rounded-lg border border-navy-100 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-gold focus:ring-1 focus:ring-gold"
+        className="w-full rounded-lg border border-navy-100 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-brand focus:ring-1 focus:ring-brand"
       />
     </div>
   );

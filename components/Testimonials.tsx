@@ -6,11 +6,11 @@ export default function Testimonials() {
   const { t } = useLang();
 
   return (
-    <section className="section bg-navy-50">
+    <section className="section bg-white">
       <div className="container">
         <div className="mx-auto max-w-2xl text-center">
           <span className="eyebrow">{t.testimonials.eyebrow}</span>
-          <h2 className="font-serif text-3xl font-bold text-navy-900 md:text-4xl">
+          <h2 className="h-display text-3xl text-navy-900 md:text-[40px]">
             {t.testimonials.title}
           </h2>
         </div>
@@ -21,7 +21,7 @@ export default function Testimonials() {
               key={i}
               className="flex flex-col rounded-xl border border-navy-100 bg-white p-7 shadow-sm"
             >
-              <div className="mb-4 flex gap-1 text-gold">
+              <div className="mb-4 flex gap-1 text-amber-400">
                 {Array.from({ length: 5 }).map((_, s) => (
                   <svg key={s} width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />

@@ -9,28 +9,33 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          DEFAULT: "#0a2540",
-          50: "#eef2f7",
-          100: "#d6e0eb",
-          700: "#13314f",
-          800: "#0f2a43",
-          900: "#0a2540",
-          950: "#061829",
+          DEFAULT: "#0c2643",
+          50: "#eef3f8",
+          100: "#d7e3ee",
+          700: "#16395f",
+          800: "#0f2c4d",
+          900: "#0c2643",
+          950: "#081b30",
         },
-        gold: {
-          DEFAULT: "#c8a45c",
-          light: "#dcc089",
-          dark: "#a8853f",
+        brand: {
+          DEFAULT: "#1f5fd6",
+          light: "#3b78e8",
+          dark: "#1a4fb3",
+          50: "#eef4fd",
+        },
+        accent: {
+          green: "#1a8a48",
+          greendark: "#15733c",
         },
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        serif: ["var(--font-playfair)", "Georgia", "serif"],
+        display: ["var(--font-poppins)", "var(--font-inter)", "sans-serif"],
       },
       container: {
         center: true,
         padding: "1.25rem",
-        screens: { "2xl": "1200px" },
+        screens: { "2xl": "1240px" },
       },
       keyframes: {
         "fade-up": {

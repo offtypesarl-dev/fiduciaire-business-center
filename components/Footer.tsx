@@ -11,11 +11,11 @@ export default function Footer() {
       <div className="container grid gap-10 py-16 md:grid-cols-4">
         <div className="md:col-span-1">
           <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-gold font-serif text-lg font-bold text-navy-950">
+            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-navy-900 font-display text-lg font-extrabold text-white">
               F
             </span>
-            <span className="font-serif text-lg font-bold text-white">
-              Fiduciaire <span className="text-gold">&amp;</span> Business Center
+            <span className="h-display text-lg text-white">
+              Fiduciaire <span className="text-brand-light">&amp;</span> Business Center
             </span>
           </div>
           <p className="mt-4 text-sm leading-relaxed">{t.footer.tagline}</p>
@@ -26,10 +26,10 @@ export default function Footer() {
             {t.footer.quickLinks}
           </h4>
           <ul className="space-y-2.5 text-sm">
-            <li><a href="#services" className="hover:text-gold">{t.nav.services}</a></li>
-            <li><a href="#about" className="hover:text-gold">{t.nav.about}</a></li>
-            <li><a href="#why" className="hover:text-gold">{t.nav.whyus}</a></li>
-            <li><a href="#contact" className="hover:text-gold">{t.nav.contact}</a></li>
+            <li><a href="#services" className="hover:text-brand-light">{t.nav.services}</a></li>
+            <li><a href="#about" className="hover:text-brand-light">{t.nav.about}</a></li>
+            <li><a href="#why" className="hover:text-brand-light">{t.nav.whyus}</a></li>
+            <li><a href="#contact" className="hover:text-brand-light">{t.nav.contact}</a></li>
           </ul>
         </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
           <ul className="space-y-2.5 text-sm">
             {t.services.items.slice(0, 5).map((s, i) => (
               <li key={i}>
-                <a href="#services" className="hover:text-gold">
+                <a href="#services" className="hover:text-brand-light">
                   {s.title}
                 </a>
               </li>
@@ -55,12 +55,12 @@ export default function Footer() {
           <ul className="space-y-2.5 text-sm">
             <li>{t.contact.address}</li>
             <li>
-              <a href={`tel:${business.primaryPhone}`} className="hover:text-gold">
+              <a href={`tel:${business.primaryPhone}`} className="hover:text-brand-light">
                 {business.phones[0]}
               </a>
             </li>
             <li>
-              <a href={`mailto:${business.email}`} className="break-all hover:text-gold">
+              <a href={`mailto:${business.email}`} className="break-all hover:text-brand-light">
                 {business.email}
               </a>
             </li>

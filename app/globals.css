@@ -4,7 +4,7 @@
 
 :root {
   --font-inter: "Inter", system-ui, sans-serif;
-  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-poppins: "Poppins", system-ui, sans-serif;
 }
 
 html {
@@ -13,19 +13,27 @@ html {
 
 body {
   @apply bg-white text-navy-900 antialiased;
+  font-family: var(--font-inter);
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-semibold text-navy-950 transition-all hover:bg-gold-light hover:shadow-lg;
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:bg-brand-dark hover:shadow-lg;
   }
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-md border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white/10;
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/40 px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:border-white hover:bg-white/10;
   }
   .section {
-    @apply py-20 md:py-28;
+    @apply py-20 md:py-24;
   }
   .eyebrow {
-    @apply mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-gold-dark;
+    @apply mb-3 inline-block text-sm font-bold uppercase tracking-[0.18em] text-brand;
+  }
+  .h-display {
+    font-family: var(--font-poppins);
+    @apply font-bold tracking-tight;
+  }
+  .learn-more {
+    @apply mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-brand transition-colors hover:text-brand-dark;
   }
 }

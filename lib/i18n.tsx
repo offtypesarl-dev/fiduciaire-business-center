@@ -6,6 +6,8 @@ export type Lang = "fr" | "en";
 
 export const content = {
   fr: {
+    topbar: "Besoin d'un expert-comptable ? Appelez le",
+    learnMore: "En savoir plus",
     nav: {
       services: "Services",
       about: "À propos",
@@ -172,6 +174,8 @@ export const content = {
   },
 
   en: {
+    topbar: "Need a certified accountant? Call us at",
+    learnMore: "Learn more",
     nav: {
       services: "Services",
       about: "About",

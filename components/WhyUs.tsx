@@ -14,13 +14,13 @@ export default function WhyUs() {
 
   return (
     <section id="why" className="section relative overflow-hidden bg-navy-900">
-      <div className="pointer-events-none absolute -right-32 top-0 h-96 w-96 rounded-full bg-gold/10 blur-3xl" />
+      <div className="pointer-events-none absolute -right-32 top-0 h-96 w-96 rounded-full bg-brand/15 blur-3xl" />
       <div className="container relative">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-gold-light">
+          <span className="mb-3 inline-block text-sm font-bold uppercase tracking-[0.18em] text-brand-light">
             {t.why.eyebrow}
           </span>
-          <h2 className="font-serif text-3xl font-bold text-white md:text-4xl">
+          <h2 className="h-display text-3xl text-white md:text-[40px]">
             {t.why.title}
           </h2>
         </div>
@@ -28,14 +28,12 @@ export default function WhyUs() {
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {t.why.items.map((it, i) => (
             <div key={i} className="text-center sm:text-left">
-              <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-white/5 text-gold ring-1 ring-white/10 sm:mx-0">
+              <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-brand text-white ring-1 ring-white/10 sm:mx-0">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
                   <path d={icons[i % icons.length]} />
                 </svg>
               </div>
-              <h3 className="font-serif text-lg font-bold text-white">
-                {it.title}
-              </h3>
+              <h3 className="h-display text-lg text-white">{it.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/60">
                 {it.desc}
               </p>
