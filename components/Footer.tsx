@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useLang, business } from "@/lib/i18n";
+import { legalRoutes } from "@/lib/legal";
 
 export default function Footer() {
   const { t } = useLang();
@@ -71,11 +73,24 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container flex flex-col items-center justify-between gap-3 py-6 text-xs text-white/40 sm:flex-row">
-          <p>
-            © {year} {business.name}. {t.footer.rights}
-          </p>
-          <p>{t.footer.legal}</p>
+        <div className="container flex flex-col gap-4 py-6">
+          <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium text-white/60 sm:justify-start">
+            <Link href={legalRoutes.mentions} className="hover:text-brand-light">
+              {t.footer.mentions}
+            </Link>
+            <Link href={legalRoutes.confidentialite} className="hover:text-brand-light">
+              {t.footer.privacy}
+            </Link>
+            <Link href={legalRoutes.conditions} className="hover:text-brand-light">
+              {t.footer.terms}
+            </Link>
+          </nav>
+          <div className="flex flex-col items-center justify-between gap-3 text-xs text-white/40 sm:flex-row">
+            <p>
+              © {year} {business.name}. {t.footer.rights}
+            </p>
+            <p>{t.footer.legal}</p>
+          </div>
         </div>
       </div>
     </footer>

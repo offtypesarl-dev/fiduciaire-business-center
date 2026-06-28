@@ -170,6 +170,9 @@ export const content = {
       contactTitle: "Contact",
       rights: "Tous droits réservés.",
       legal: "SARL AU · Capital 50 000 MAD · RC 11313 · El Jadida",
+      mentions: "Mentions légales",
+      privacy: "Politique de confidentialité",
+      terms: "Conditions d'utilisation",
     },
   },
 
@@ -338,6 +341,9 @@ export const content = {
       contactTitle: "Contact",
       rights: "All rights reserved.",
       legal: "SARL AU · Capital 50,000 MAD · RC 11313 · El Jadida",
+      mentions: "Legal notice",
+      privacy: "Privacy policy",
+      terms: "Terms of use",
     },
   },
 };

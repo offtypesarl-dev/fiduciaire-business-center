@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { useLang, business } from "@/lib/i18n";
 
 export default function Header() {
@@ -16,10 +17,10 @@ export default function Header() {
   }, []);
 
   const links = [
-    { href: "#services", label: t.nav.services },
-    { href: "#about", label: t.nav.about },
-    { href: "#why", label: t.nav.whyus },
-    { href: "#contact", label: t.nav.contact },
+    { href: "/#services", label: t.nav.services },
+    { href: "/#about", label: t.nav.about },
+    { href: "/#why", label: t.nav.whyus },
+    { href: "/#contact", label: t.nav.contact },
   ];
 
   return (
@@ -44,7 +45,7 @@ export default function Header() {
         }`}
       >
         <div className="container flex h-[68px] items-center justify-between">
-          <a href="#top" className="flex items-center gap-2.5">
+          <Link href="/" className="flex items-center gap-2.5">
             <img
               src="/logo-mark.png"
               alt="Fiduciaire & Business Center"
@@ -60,17 +61,17 @@ export default function Header() {
                 S.A.R.L · El Jadida
               </span>
             </span>
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">
             {links.map((l) => (
-              <a
+              <Link
                 key={l.href}
                 href={l.href}
                 className="text-[15px] font-medium text-navy-900/80 transition-colors hover:text-brand-ink"
               >
                 {l.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -120,14 +121,14 @@ export default function Header() {
           <div className="border-t border-navy-100 bg-white lg:hidden">
             <nav className="container flex flex-col py-4">
               {links.map((l) => (
-                <a
+                <Link
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
                   className="border-b border-navy-50 py-3 text-[15px] font-medium text-navy-900/80"
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
               <div className="mt-4 flex items-center gap-3">
                 <button
