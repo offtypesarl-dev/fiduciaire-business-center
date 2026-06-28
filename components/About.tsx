@@ -13,9 +13,13 @@ export default function About() {
           <div className="absolute -left-4 -top-4 h-24 w-24 rounded-xl border-2 border-brand/30" />
           <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-xl bg-brand/10" />
           <div className="relative overflow-hidden rounded-2xl bg-navy-900 p-10 shadow-xl">
-            <div className="flex h-28 w-28 items-center justify-center rounded-full bg-brand/20 text-4xl font-display font-extrabold text-white">
-              AO
-            </div>
+            <img
+              src="/adil.jpg"
+              alt={t.about.directorName}
+              width={112}
+              height={112}
+              className="h-28 w-28 rounded-full object-cover object-top ring-2 ring-brand/50"
+            />
             <div className="mt-6">
               <div className="h-display text-2xl text-white">
                 {t.about.directorName}
