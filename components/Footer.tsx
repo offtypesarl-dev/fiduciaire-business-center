@@ -10,14 +10,16 @@ export default function Footer() {
     <footer className="bg-navy-950 text-white/70">
       <div className="container grid gap-10 py-16 md:grid-cols-4">
         <div className="md:col-span-1">
-          <div className="flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-md bg-navy-900 font-display text-lg font-extrabold text-white">
-              F
-            </span>
-            <span className="h-display text-lg text-white">
-              Fiduciaire <span className="text-brand-light">&amp;</span> Business Center
-            </span>
-          </div>
+          <picture>
+            <source srcSet="/logo-full.webp" type="image/webp" />
+            <img
+              src="/logo-full.png"
+              alt="Fiduciaire & Business Center"
+              width={220}
+              height={66}
+              className="h-12 w-auto"
+            />
+          </picture>
           <p className="mt-4 text-sm leading-relaxed">{t.footer.tagline}</p>
         </div>
 

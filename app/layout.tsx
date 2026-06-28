@@ -17,6 +17,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://fiduciaire-business-center.vercel.app"),
   title: "Fiduciaire & Business Center | Cabinet comptable agréé à El Jadida",
   description:
     "Cabinet de comptabilité et de conseil agréé à El Jadida dirigé par Adil Obbad. Comptabilité, fiscalité, création de société, audit et conseil pour entreprises et entrepreneurs au Maroc.",
@@ -33,6 +34,14 @@ export const metadata: Metadata = {
     description:
       "Comptabilité, fiscalité, création de société et conseil. Votre partenaire de confiance à El Jadida.",
     type: "website",
+    images: [{ url: "/og.png", width: 1600, height: 552, alt: "Fiduciaire & Business Center" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fiduciaire & Business Center | Cabinet comptable à El Jadida",
+    description:
+      "Comptabilité, fiscalité, création de société et conseil. Votre partenaire de confiance à El Jadida.",
+    images: ["/og.png"],
   },
 };
 

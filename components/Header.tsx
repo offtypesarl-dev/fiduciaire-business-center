@@ -45,15 +45,19 @@ export default function Header() {
       >
         <div className="container flex h-[68px] items-center justify-between">
           <a href="#top" className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-navy-900 font-display text-lg font-extrabold text-white">
-              F
-            </span>
+            <img
+              src="/logo-mark.png"
+              alt="Fiduciaire & Business Center"
+              width={44}
+              height={44}
+              className="h-10 w-10 shrink-0"
+            />
             <span className="flex flex-col leading-none">
-              <span className="font-display text-[19px] font-extrabold text-navy-900">
-                Fiduciaire<span className="text-brand">&amp;</span>Business
+              <span className="font-display text-[18px] font-extrabold text-navy-900 sm:text-[19px]">
+                Fiduciaire <span className="text-brand">&amp;</span> Business Center
               </span>
               <span className="mt-1 text-[10px] font-semibold uppercase tracking-[0.28em] text-navy-900/50">
-                Center · El Jadida
+                S.A.R.L · El Jadida
               </span>
             </span>
           </a>
