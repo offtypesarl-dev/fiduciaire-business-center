@@ -22,6 +22,14 @@ export const content = {
     formWhatsapp: "Envoyer sur WhatsApp",
     formEmailAlt: "ou envoyer par email",
     formSuccess: "Merci ! Ouvrez WhatsApp pour finaliser l'envoi de votre demande.",
+    callback: {
+      title: "Rappel gratuit en 2 minutes",
+      subtitle: "Laissez votre numéro, on vous rappelle.",
+      placeholder: "Votre numéro de téléphone",
+      button: "Rappelez-moi",
+      msg: "Bonjour, merci de me rappeler au",
+      note: "Sans engagement · réponse rapide",
+    },
     nav: {
       services: "Services",
       about: "À propos",
@@ -207,6 +215,14 @@ export const content = {
     formWhatsapp: "Send on WhatsApp",
     formEmailAlt: "or send by email",
     formSuccess: "Thank you! Open WhatsApp to complete sending your request.",
+    callback: {
+      title: "Free callback in 2 minutes",
+      subtitle: "Leave your number and we'll call you back.",
+      placeholder: "Your phone number",
+      button: "Call me back",
+      msg: "Hello, please call me back at",
+      note: "No obligation · quick response",
+    },
     nav: {
       services: "Services",
       about: "About",

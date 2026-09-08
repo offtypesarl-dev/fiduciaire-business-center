@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLang, business } from "@/lib/i18n";
+import CallbackWidget from "@/components/CallbackWidget";
 
 export default function Contact() {
   const { t } = useLang();
@@ -58,6 +59,10 @@ export default function Contact() {
             <p className="mt-4 text-lg text-navy-900/60">
               {t.contact.subtitle}
             </p>
+
+            <div className="mt-8">
+              <CallbackWidget />
+            </div>
 
             <div className="mt-8 space-y-6">
               <ContactRow

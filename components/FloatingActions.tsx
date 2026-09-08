@@ -27,6 +27,15 @@ export default function FloatingActions() {
 
   return (
     <>
+      {/* Floating quick-call — desktop only (mobile has the sticky Call button) */}
+      <a
+        href={`tel:${business.primaryPhone}`}
+        aria-label={t.callNow}
+        className="fixed bottom-24 right-4 z-40 hidden h-14 w-14 items-center justify-center rounded-full bg-navy-900 text-white shadow-lg ring-4 ring-navy-900/20 transition-transform hover:scale-105 md:flex"
+      >
+        <PhoneIcon size={24} />
+      </a>
+
       {/* Floating WhatsApp — desktop + mobile (sits above the mobile bar) */}
       <a
         href={waLink(message)}
