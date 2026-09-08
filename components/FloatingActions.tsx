@@ -33,7 +33,7 @@ export default function FloatingActions() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={t.whatsapp}
-        className="fixed bottom-24 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ring-4 ring-[#25D366]/20 transition-transform hover:scale-105 md:bottom-6"
+        className="fixed bottom-24 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#128C4B] text-white shadow-lg ring-4 ring-[#128C4B]/25 transition-transform hover:scale-105 md:bottom-6"
       >
         <WhatsAppIcon size={28} />
       </a>
