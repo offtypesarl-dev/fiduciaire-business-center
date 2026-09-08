@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 
 export type Lang = "fr" | "en";
 
@@ -8,6 +8,20 @@ export const content = {
   fr: {
     topbar: "Besoin d'un expert-comptable ? Appelez le",
     learnMore: "En savoir plus",
+    whatsapp: "WhatsApp",
+    callNow: "Appeler",
+    getQuote: "Devis gratuit",
+    faq: {
+      eyebrow: "Questions fréquentes",
+      title: "Vos questions, nos réponses",
+      subtitle:
+        "Tout ce qu'il faut savoir avant de nous confier votre comptabilité.",
+    },
+    heroWhatsappMsg:
+      "Bonjour Fiduciaire & Business Center, je souhaite un premier échange gratuit au sujet de :",
+    formWhatsapp: "Envoyer sur WhatsApp",
+    formEmailAlt: "ou envoyer par email",
+    formSuccess: "Merci ! Ouvrez WhatsApp pour finaliser l'envoi de votre demande.",
     nav: {
       services: "Services",
       about: "À propos",
@@ -179,6 +193,20 @@ export const content = {
   en: {
     topbar: "Need a certified accountant? Call us at",
     learnMore: "Learn more",
+    whatsapp: "WhatsApp",
+    callNow: "Call",
+    getQuote: "Free quote",
+    faq: {
+      eyebrow: "Frequently asked questions",
+      title: "Your questions, answered",
+      subtitle:
+        "Everything you need to know before entrusting us with your accounting.",
+    },
+    heroWhatsappMsg:
+      "Hello Fiduciaire & Business Center, I'd like a free first conversation about:",
+    formWhatsapp: "Send on WhatsApp",
+    formEmailAlt: "or send by email",
+    formSuccess: "Thank you! Open WhatsApp to complete sending your request.",
     nav: {
       services: "Services",
       about: "About",
@@ -355,6 +383,7 @@ export const business = {
   shortName: "FBC",
   phones: ["+212 523 39 22 99", "+212 661 71 83 29", "+212 660 33 44 80"],
   primaryPhone: "+212523392299",
+  whatsapp: "212661718329", // digits only — wa.me deep links
   email: "fiduciaire.business.center@gmail.com",
   mapsQuery:
     "Fiduciaire+%26+Business+Center,+Bd+Mohammed+VI,+El+Jadida",
@@ -370,6 +399,9 @@ const LangContext = createContext<LangContextType | null>(null);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>("fr");
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
   return (
     <LangContext.Provider value={{ lang, setLang, t: content[lang] }}>
       {children}

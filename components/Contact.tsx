@@ -7,20 +7,42 @@ export default function Contact() {
   const { t } = useLang();
   const [sent, setSent] = useState(false);
 
+  const buildLead = (form: HTMLFormElement) => {
+    const data = new FormData(form);
+    const name = (data.get("name") as string) || "";
+    const email = (data.get("email") as string) || "";
+    const phone = (data.get("phone") as string) || "";
+    const message = (data.get("message") as string) || "";
+    return { name, email, phone, message };
+  };
+
+  // Primary lead path: WhatsApp deep link (works reliably on every device in Morocco).
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    const name = data.get("name");
-    const email = data.get("email");
-    const phone = data.get("phone");
-    const message = data.get("message");
+    const { name, email, phone, message } = buildLead(e.currentTarget);
+    const text =
+      `${t.heroWhatsappMsg}\n\n` +
+      `${t.contact.formName}: ${name}\n` +
+      `${t.contact.formEmail}: ${email}\n` +
+      `${t.contact.formPhone}: ${phone}\n\n${message}`;
+    window.open(
+      `https://wa.me/${business.whatsapp}?text=${encodeURIComponent(text)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+    setSent(true);
+  };
+
+  // Fallback lead path: prefilled email.
+  const handleEmail = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const form = e.currentTarget.closest("form");
+    if (!form) return;
+    const { name, email, phone, message } = buildLead(form);
     const subject = encodeURIComponent(`Demande de contact — ${name}`);
     const body = encodeURIComponent(
       `Nom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\n\n${message}`
     );
-    window.location.href = `mailto:${business.email}?subject=${subject}&body=${body}`;
-    setSent(true);
+    e.currentTarget.href = `mailto:${business.email}?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -119,12 +141,25 @@ export default function Contact() {
                   className="w-full rounded-lg border border-navy-100 bg-white px-4 py-3 text-sm text-navy-900 outline-none transition-colors focus:border-brand focus:ring-1 focus:ring-brand"
                 />
               </div>
-              <button type="submit" className="btn-primary w-full">
-                {t.contact.formSubmit}
+              <button
+                type="submit"
+                className="flex w-full items-center justify-center gap-2.5 rounded-full bg-[#25D366] px-7 py-3.5 text-sm font-semibold uppercase tracking-wide text-white transition-all hover:bg-[#1eb457] hover:shadow-lg"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.47 14.38c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2z" />
+                </svg>
+                {t.formWhatsapp}
               </button>
+              <a
+                href={`mailto:${business.email}`}
+                onClick={handleEmail}
+                className="block text-center text-sm font-medium text-brand-ink underline-offset-2 hover:underline"
+              >
+                {t.formEmailAlt}
+              </a>
               {sent && (
-                <p className="text-center text-sm text-brand-ink">
-                  ✓ {business.email}
+                <p className="text-center text-sm font-medium text-accent-green">
+                  ✓ {t.formSuccess}
                 </p>
               )}
               <p className="text-center text-xs text-navy-900/40">
