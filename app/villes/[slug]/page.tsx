@@ -96,7 +96,7 @@ export default function CityPageRoute({
       <article className="pt-[116px]">
         <header className="bg-navy-900 py-14 text-white md:py-16">
           <div className="container">
-            <Breadcrumbs items={crumbs} />
+            <Breadcrumbs items={crumbs} tone="light" />
             <p className="eyebrow mt-6 !text-brand-light">Zone desservie</p>
             <h1 className="h-display max-w-3xl text-3xl text-white md:text-[44px] md:leading-[1.1]">
               {c.h1}
