@@ -9,7 +9,7 @@ export const guides: GuidePage[] = [
     slug: "creer-sarl-maroc",
     keyword: "comment créer une SARL au Maroc",
     label: "Créer une SARL au Maroc",
-    metaTitle: "Comment créer une SARL au Maroc en 2026 : étapes et délais | FBC",
+    metaTitle: "Créer une SARL au Maroc en 2026 : étapes et délais | FBC",
     metaDescription:
       "Créer une SARL au Maroc en 2026 : certificat négatif, statuts, capital, RC, ICE, CNSS. Toutes les étapes, les délais (5 à 10 jours) et les coûts expliqués.",
     h1: "Comment créer une SARL au Maroc : le guide complet 2026",
@@ -247,7 +247,7 @@ export const guides: GuidePage[] = [
     slug: "auto-entrepreneur-ou-sarl",
     keyword: "auto-entrepreneur ou SARL Maroc",
     label: "Auto-entrepreneur ou SARL ?",
-    metaTitle: "Auto-entrepreneur ou SARL au Maroc : que choisir en 2026 ? | FBC",
+    metaTitle: "Auto-entrepreneur ou SARL au Maroc en 2026 ? | Guide FBC",
     metaDescription:
       "Auto-entrepreneur ou SARL au Maroc ? Comparatif 2026 : plafonds, fiscalité (0,5%/1% vs IS 20%), responsabilité, crédibilité et règle des 80 000 DH par client.",
     h1: "Auto-entrepreneur ou SARL au Maroc : que choisir ?",

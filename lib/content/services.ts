@@ -76,7 +76,7 @@ export const services: ServicePage[] = [
     label: "Création d'entreprise",
     metaTitle: "Création d'entreprise & de société à El Jadida | FBC",
     metaDescription:
-      "Créez votre société à El Jadida de A à Z : certificat négatif, statuts, RC, ICE, identifiant fiscal et CNSS. SARL, SARL AU, auto-entrepreneur. Accompagnement complet.",
+      "Créez votre société à El Jadida de A à Z : certificat négatif, statuts, RC, ICE, identifiant fiscal et CNSS. SARL, SARL AU ou auto-entrepreneur.",
     h1: "Création d'entreprise et de société à El Jadida",
     summary:
       "De l'idée à l'immatriculation : certificat négatif, statuts, RC, ICE et toutes les formalités.",
@@ -144,7 +144,7 @@ export const services: ServicePage[] = [
     label: "Conseil fiscal & juridique",
     metaTitle: "Conseil fiscal & juridique à El Jadida | Cabinet FBC",
     metaDescription:
-      "Optimisez votre fiscalité à El Jadida en toute légalité : IS, IR, TVA, choix de régime et accompagnement en cas de contrôle. Premier rendez-vous gratuit au cabinet FBC.",
+      "Optimisez votre fiscalité à El Jadida en toute légalité : IS, IR, TVA, choix de régime et accompagnement en cas de contrôle. Premier rendez-vous gratuit.",
     h1: "Conseil fiscal et juridique à El Jadida",
     summary:
       "Optimisation fiscale légale, choix de régime et sécurisation de vos décisions au regard du CGI 2026.",
@@ -294,7 +294,7 @@ export const services: ServicePage[] = [
     label: "Gestion de la paie",
     metaTitle: "Gestion de la paie à El Jadida | Cabinet comptable FBC",
     metaDescription:
-      "Externalisez la paie de vos salariés à El Jadida : bulletins conformes, cotisations CNSS, AMO et déclarations Damancom. Fiable et confidentiel. Devis gratuit au cabinet FBC.",
+      "Externalisez la paie à El Jadida : bulletins conformes, cotisations CNSS, AMO et déclarations Damancom. Fiable et confidentiel. Devis gratuit au cabinet FBC.",
     h1: "Gestion de la paie à El Jadida",
     summary:
       "Bulletins de paie conformes, cotisations CNSS et AMO calculées, déclarations Damancom déposées.",
@@ -368,7 +368,7 @@ export const services: ServicePage[] = [
     label: "Audit & révision comptable",
     metaTitle: "Audit & révision comptable à El Jadida | Cabinet FBC",
     metaDescription:
-      "Fiabilisez vos comptes à El Jadida : révision comptable, audit contractuel et diagnostic avant clôture ou cession. Regard indépendant et rigoureux. Cabinet FBC, devis gratuit.",
+      "Fiabilisez vos comptes à El Jadida : révision comptable, audit contractuel et diagnostic avant clôture ou cession. Regard indépendant. Devis gratuit FBC.",
     h1: "Audit et révision comptable à El Jadida",
     summary:
       "Révision des comptes, audit contractuel et diagnostic pour fiabiliser vos chiffres avant décision.",
@@ -432,7 +432,7 @@ export const services: ServicePage[] = [
     label: "Domiciliation d'entreprise",
     metaTitle: "Domiciliation d'entreprise à El Jadida | Cabinet FBC",
     metaDescription:
-      "Domiciliez le siège de votre société à El Jadida : adresse commerciale, contrat conforme, gestion du courrier. Idéal création et sociétés à distance. Cabinet FBC, devis gratuit.",
+      "Domiciliez le siège de votre société à El Jadida : adresse commerciale, contrat conforme, gestion du courrier. Idéal création et sociétés à distance.",
     h1: "Domiciliation d'entreprise à El Jadida",
     summary:
       "Une adresse de siège social à El Jadida avec contrat conforme et gestion de votre courrier.",
@@ -501,7 +501,7 @@ export const services: ServicePage[] = [
     label: "Conseil en gestion & organisation",
     metaTitle: "Conseil en gestion & organisation à El Jadida | FBC",
     metaDescription:
-      "Pilotez votre entreprise à El Jadida avec des chiffres qui parlent : tableaux de bord, marges, trésorerie et business plan. Conseil en gestion sur mesure. Cabinet FBC, échange gratuit.",
+      "Pilotez votre entreprise à El Jadida : tableaux de bord, marges, trésorerie et business plan. Conseil en gestion sur mesure. Échange gratuit au cabinet FBC.",
     h1: "Conseil en gestion et organisation à El Jadida",
     summary:
       "Tableaux de bord, analyse de marges, trésorerie et business plan pour piloter vraiment votre activité.",
@@ -566,7 +566,7 @@ export const services: ServicePage[] = [
     label: "Accompagnement auto-entrepreneur",
     metaTitle: "Statut auto-entrepreneur au Maroc | Cabinet FBC El Jadida",
     metaDescription:
-      "Lancez votre activité en auto-entrepreneur au Maroc : inscription RNAE, plafonds, IR libératoire de 0,5 % ou 1 %. Accompagnement clair par le cabinet FBC à El Jadida. Échange gratuit.",
+      "Devenez auto-entrepreneur au Maroc : inscription RNAE, plafonds, IR libératoire de 0,5 % ou 1 %. Accompagnement clair par le cabinet FBC à El Jadida.",
     h1: "Accompagnement au statut auto-entrepreneur au Maroc",
     summary:
       "Inscription au RNAE, plafonds, fiscalité forfaitaire : lancez votre activité simplement et sans erreur.",

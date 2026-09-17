@@ -191,9 +191,9 @@ export const cities: CityPage[] = [
     name: "Sidi Bennour",
     keyword: "comptable Sidi Bennour",
     metaTitle:
-      "Comptable à Sidi Bennour | Cabinet Fiduciaire & Business Center",
+      "Comptable à Sidi Bennour | Fiduciaire & Business Center",
     metaDescription:
-      "Comptable pour l'agro-industrie et les PME de Sidi Bennour, chef-lieu de province : comptabilité, TVA agricole, paie et conseil fiscal. Cabinet agréé, service à distance.",
+      "Comptable pour l'agro-industrie et les PME de Sidi Bennour : comptabilité, TVA, paie et conseil fiscal. Cabinet agréé près d'El Jadida, à distance.",
     h1: "Comptable à Sidi Bennour",
     summary:
       "Accompagnement comptable des acteurs agro-industriels et des PME de Sidi Bennour, chef-lieu de la province voisine.",
@@ -248,9 +248,9 @@ export const cities: CityPage[] = [
     name: "Settat",
     keyword: "expert comptable Settat",
     metaTitle:
-      "Expert comptable à Settat | Cabinet Fiduciaire & Business Center",
+      "Expert comptable à Settat | Fiduciaire & Business Center",
     metaDescription:
-      "Accompagnement comptable et fiscal des PME industrielles, agricoles et universitaires de Settat, chef-lieu de province. Comptabilité, IS, paie et audit. Cabinet agréé.",
+      "Comptable et conseil fiscal pour les PME industrielles, agricoles et universitaires de Settat : comptabilité, IS, paie et audit. Cabinet agréé, à distance.",
     h1: "Expert comptable à Settat",
     summary:
       "Comptabilité, fiscalité et conseil pour les PME industrielles, agricoles et de services de Settat, chef-lieu de province.",
@@ -311,7 +311,7 @@ export const cities: CityPage[] = [
     metaTitle:
       "Comptable à Oualidia | Cabinet Fiduciaire & Business Center",
     metaDescription:
-      "Comptable pour l'hôtellerie, l'ostréiculture et l'agriculture d'Oualidia : comptabilité, TVA hébergement 10 %, paie saisonnière et conseil. Cabinet agréé, service à distance.",
+      "Comptable pour l'hôtellerie, l'ostréiculture et l'agriculture d'Oualidia : comptabilité, TVA 10 %, paie saisonnière et conseil. Cabinet agréé, à distance.",
     h1: "Comptable à Oualidia",
     summary:
       "Comptabilité et fiscalité pour l'hôtellerie, l'ostréiculture et l'agriculture de la station côtière d'Oualidia.",
@@ -368,7 +368,7 @@ export const cities: CityPage[] = [
     metaTitle:
       "Comptable à Bir Jdid | Cabinet Fiduciaire & Business Center",
     metaDescription:
-      "Comptable pour les TPE, commerces et exploitations agricoles de Bir Jdid, sur l'axe El Jadida–Casablanca–Berrechid. Comptabilité, création d'entreprise et TVA. Cabinet agréé.",
+      "Comptable pour les TPE, commerces et exploitations agricoles de Bir Jdid, sur l'axe El Jadida–Casablanca. Comptabilité, création et TVA. Cabinet agréé.",
     h1: "Comptable à Bir Jdid",
     summary:
       "Comptabilité et création d'entreprise pour les TPE, commerces et exploitations agricoles périurbaines de Bir Jdid.",
@@ -423,7 +423,7 @@ export const cities: CityPage[] = [
     name: "Casablanca",
     keyword: "cabinet comptable Casablanca",
     metaTitle:
-      "Cabinet comptable pour Casablanca | Fiduciaire & Business Center",
+      "Comptable pour Casablanca | Fiduciaire & Business Center",
     metaDescription:
       "Cabinet comptable basé à El Jadida au service des PME de la région de Casablanca : comptabilité, création de société, TVA et paie gérées à distance. Devis gratuit.",
     h1: "Cabinet comptable pour les entreprises de Casablanca",
