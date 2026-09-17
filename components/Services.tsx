@@ -1,6 +1,19 @@
 "use client";
 
+import Link from "next/link";
 import { useLang } from "@/lib/i18n";
+
+// Maps the 7 curated homepage service cards (display order) to their detail page.
+// Empty string → link to the services hub (no dedicated page for that card).
+const cardSlugs = [
+  "tenue-comptabilite",
+  "conseil-fiscal",
+  "creation-entreprise",
+  "declarations-fiscales",
+  "audit-revision",
+  "", // Ingénierie de formation — no dedicated page yet
+  "conseil-gestion",
+];
 
 const icons = [
   "M9 17V9m4 8V5m4 12v-6M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2z",
@@ -41,12 +54,15 @@ export default function Services() {
               <p className="mt-2.5 flex-1 text-sm leading-relaxed text-navy-900/60">
                 {s.desc}
               </p>
-              <a href="#contact" className="learn-more">
+              <Link
+                href={cardSlugs[i] ? `/services/${cardSlugs[i]}` : "/services"}
+                className="learn-more"
+              >
                 {t.learnMore}
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
-              </a>
+              </Link>
             </div>
           ))}
 

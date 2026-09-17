@@ -17,10 +17,11 @@ export default function Header() {
   }, []);
 
   const links = [
-    { href: "/#services", label: t.nav.services },
-    { href: "/#about", label: t.nav.about },
-    { href: "/#why", label: t.nav.whyus },
-    { href: "/#contact", label: t.nav.contact },
+    { href: "/services", label: t.nav.services },
+    { href: "/villes", label: lang === "fr" ? "Zones desservies" : "Areas served" },
+    { href: "/guides", label: "Guides" },
+    { href: "/a-propos", label: t.nav.about },
+    { href: "/contact", label: t.nav.contact },
   ];
 
   return (

@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { useLang, business } from "@/lib/i18n";
 import { legalRoutes } from "@/lib/legal";
+import { services } from "@/lib/content/services";
+import { cities } from "@/lib/content/cities";
 
 export default function Footer() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
   const year = 2026;
 
   return (
@@ -27,26 +29,36 @@ export default function Footer() {
 
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-            {t.footer.quickLinks}
+            {t.footer.servicesTitle}
           </h4>
           <ul className="space-y-2.5 text-sm">
-            <li><a href="#services" className="hover:text-brand-light">{t.nav.services}</a></li>
-            <li><a href="#about" className="hover:text-brand-light">{t.nav.about}</a></li>
-            <li><a href="#why" className="hover:text-brand-light">{t.nav.whyus}</a></li>
-            <li><a href="#contact" className="hover:text-brand-light">{t.nav.contact}</a></li>
+            {services.slice(0, 6).map((s) => (
+              <li key={s.slug}>
+                <Link href={`/services/${s.slug}`} className="hover:text-brand-light">
+                  {s.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
           <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
-            {t.footer.servicesTitle}
+            {t.footer.quickLinks}
           </h4>
           <ul className="space-y-2.5 text-sm">
-            {t.services.items.slice(0, 5).map((s, i) => (
-              <li key={i}>
-                <a href="#services" className="hover:text-brand-light">
-                  {s.title}
-                </a>
+            <li><Link href="/services" className="hover:text-brand-light">{t.nav.services}</Link></li>
+            <li><Link href="/villes" className="hover:text-brand-light">{lang === "fr" ? "Zones desservies" : "Areas served"}</Link></li>
+            <li><Link href="/guides" className="hover:text-brand-light">Guides</Link></li>
+            <li><Link href="/a-propos" className="hover:text-brand-light">{t.nav.about}</Link></li>
+            <li><Link href="/contact" className="hover:text-brand-light">{t.nav.contact}</Link></li>
+          </ul>
+          <ul className="mt-3 space-y-2 text-sm">
+            {cities.slice(0, 4).map((c) => (
+              <li key={c.slug}>
+                <Link href={`/villes/${c.slug}`} className="text-white/50 hover:text-brand-light">
+                  Comptable à {c.name}
+                </Link>
               </li>
             ))}
           </ul>

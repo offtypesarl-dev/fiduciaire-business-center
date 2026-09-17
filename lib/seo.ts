@@ -181,9 +181,98 @@ export function faqLd(lang: "fr" | "en" = "fr") {
   };
 }
 
+// Site-wide graph emitted on EVERY page (organization + website identity).
+// Per-page FAQPage schema is emitted by each page itself to avoid duplication.
 export function jsonLdGraph() {
   return {
     "@context": "https://schema.org",
-    "@graph": [organizationLd(), websiteLd(), faqLd("fr")],
+    "@graph": [organizationLd(), websiteLd()],
+  };
+}
+
+// --- Per-page schema helpers -------------------------------------------------
+
+/** Absolute URL from a root-relative path ("/services/x" or "services/x"). */
+export function absUrl(path: string) {
+  const clean = path.startsWith("/") ? path : `/${path}`;
+  return `${SITE_URL}${clean === "/" ? "" : clean}`;
+}
+
+/** BreadcrumbList JSON-LD. Pass ordered [{name, path}] from home to current. */
+export function breadcrumbLd(items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      item: absUrl(it.path),
+    })),
+  };
+}
+
+/** Service JSON-LD, linked back to the AccountingService organization. */
+export function serviceLd(opts: {
+  name: string;
+  description: string;
+  path: string;
+  areaName?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${absUrl(opts.path)}#service`,
+    name: opts.name,
+    description: opts.description,
+    serviceType: opts.name,
+    url: absUrl(opts.path),
+    provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: (opts.areaName
+      ? [opts.areaName, "El Jadida", "Casablanca-Settat", "Maroc"]
+      : BUSINESS.areaServed
+    ).map((name) => ({ "@type": "AdministrativeArea", name })),
+    availableChannel: {
+      "@type": "ServiceChannel",
+      servicePhone: BUSINESS.primaryPhone,
+      serviceUrl: SITE_URL,
+    },
+  };
+}
+
+/** Article JSON-LD for guide pages. */
+export function articleLd(opts: {
+  headline: string;
+  description: string;
+  path: string;
+  datePublished: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: opts.headline,
+    description: opts.description,
+    inLanguage: "fr",
+    url: absUrl(opts.path),
+    mainEntityOfPage: absUrl(opts.path),
+    datePublished: opts.datePublished,
+    dateModified: opts.datePublished,
+    image: `${SITE_URL}/og.png`,
+    author: { "@type": "Organization", name: BUSINESS.name, url: SITE_URL },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+}
+
+/** FAQPage JSON-LD from an arbitrary Q/A list (per-page FAQs). */
+export function faqLdFrom(items: { q: string; a: string }[], anchorPath = "/") {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${absUrl(anchorPath)}#faq`,
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
   };
 }

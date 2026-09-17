@@ -8,10 +8,15 @@ import Faq from "@/components/Faq";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
+import { faqLd } from "@/lib/seo";
 
 export default function Home() {
   return (
     <main className="pb-14 md:pb-0">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd("fr")) }}
+      />
       <Header />
       <Hero />
       <Services />
