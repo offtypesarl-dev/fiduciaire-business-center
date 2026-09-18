@@ -3,7 +3,7 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
 import StructuredData from "@/components/StructuredData";
-import { SITE_URL } from "@/lib/seo";
+import { SITE_URL, ogImages, twitterImages } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -59,21 +59,14 @@ export const metadata: Metadata = {
     title: "Fiduciaire & Business Center | Cabinet comptable à El Jadida",
     description:
       "Comptabilité, fiscalité, création de société et conseil. Votre partenaire de confiance à El Jadida. Premier échange gratuit.",
-    images: [
-      {
-        url: "/og.png",
-        width: 1600,
-        height: 448,
-        alt: "Fiduciaire & Business Center — cabinet comptable à El Jadida",
-      },
-    ],
+    images: ogImages,
   },
   twitter: {
     card: "summary_large_image",
     title: "Fiduciaire & Business Center | Cabinet comptable à El Jadida",
     description:
       "Comptabilité, fiscalité, création de société et conseil. Votre partenaire de confiance à El Jadida.",
-    images: ["/og.png"],
+    images: twitterImages,
   },
   robots: {
     index: true,

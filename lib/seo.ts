@@ -205,8 +205,8 @@ export function absUrl(path: string) {
  */
 export const OG_IMAGE = {
   url: "/og.png",
-  width: 1600,
-  height: 448,
+  width: 1200,
+  height: 630,
   alt: "Fiduciaire & Business Center — cabinet comptable à El Jadida",
 } as const;
 export const ogImages = [OG_IMAGE];
