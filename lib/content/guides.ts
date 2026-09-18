@@ -822,6 +822,106 @@ export const guides: GuidePage[] = [
       "guides/auto-entrepreneur-ou-sarl",
     ],
   },
+  {
+    slug: "changer-de-comptable-maroc",
+    keyword: "changer de comptable Maroc",
+    label: "Changer de comptable",
+    metaTitle:
+      "Changer de comptable ou de fiduciaire au Maroc | FBC",
+    metaDescription:
+      "Changer de comptable ou de fiduciaire au Maroc : le bon moment, comment récupérer vos documents comptables et réussir la transition sans risque fiscal.",
+    h1: "Changer de comptable ou de fiduciaire au Maroc",
+    summary:
+      "Quand et comment changer de fiduciaire au Maroc : le bon timing, la récupération de vos documents comptables et une transition sans rupture de vos obligations.",
+    datePublished: "2026-09-18",
+    lead: "Beaucoup d'entrepreneurs restent des années avec une fiduciaire qui ne les satisfait plus — par crainte de « tout casser ». Bonne nouvelle : au Maroc, aucune loi ne vous lie à un cabinet comptable. Vous êtes libre de changer de fiduciaire quand vous le souhaitez, à condition d'organiser proprement la transition pour ne perdre ni vos documents ni le fil de vos déclarations. Ce guide explique quand changer, comment récupérer votre dossier, et comment basculer sans interruption de vos obligations fiscales.",
+    sections: [
+      {
+        heading: "Peut-on changer de comptable quand on veut ?",
+        body: [
+          "Oui. La relation avec une fiduciaire est un contrat de prestation de services librement résiliable : il n'existe aucune exclusivité réglementée ni obligation de rester. Vérifiez simplement les conditions de votre lettre de mission ou de votre contrat (préavis éventuel, facturation des travaux en cours) afin de résilier dans les règles et sans litige.",
+          "Le seul vrai risque d'un changement n'est pas juridique mais organisationnel : une transition mal préparée, en pleine échéance fiscale, peut créer un trou dans le suivi. C'est ce que ce guide vous aide à éviter.",
+        ],
+      },
+      {
+        heading: "Les bons signaux pour changer",
+        body: [
+          "Changer de cabinet se justifie quand la relation ne vous apporte plus la sécurité ou le conseil attendus. Les motifs les plus fréquents :",
+        ],
+        bullets: [
+          "Manque de réactivité : vos e-mails et appels restent sans réponse ;",
+          "Déclarations déposées en retard, pénalités ou majorations subies ;",
+          "Aucun conseil proactif : on saisit vos pièces sans jamais vous alerter ni optimiser ;",
+          "Manque de transparence sur les honoraires ou factures imprévues ;",
+          "Difficulté à obtenir vos propres documents (bilans, grand livre, balances) ;",
+          "Croissance de votre activité que le cabinet ne suit plus (paie, TVA, filiales).",
+        ],
+      },
+      {
+        heading: "Quel est le meilleur moment pour changer ?",
+        body: [
+          "Le moment idéal est la clôture de l'exercice : en changeant après le dépôt du bilan et de la liasse fiscale, le nouveau cabinet démarre sur un exercice complet et net, sans reprendre une comptabilité à mi-parcours. Pour une entreprise clôturant au 31 décembre, la période qui suit le dépôt du bilan est donc la plus simple.",
+          "Cela dit, un changement en cours d'année reste tout à fait possible : il suffit d'organiser la reprise des écritures depuis le début de l'exercice. Évitez seulement de basculer à quelques jours d'une échéance TVA ou IS importante, pour ne pas risquer un dépôt manqué pendant la passation.",
+        ],
+      },
+      {
+        heading: "Vos documents vous appartiennent",
+        body: [
+          "Point essentiel : vos documents comptables et pièces justificatives sont votre propriété. Un cabinet ne peut pas les retenir. Lors du départ, exigez la restitution complète de votre dossier, idéalement sous forme exploitable :",
+        ],
+        bullets: [
+          "Grand livre, balances et journaux de l'exercice en cours et des exercices précédents ;",
+          "Bilans, comptes de résultat et liasses fiscales déposés ;",
+          "Déclarations de TVA, d'IS/IR et bordereaux CNSS transmis ;",
+          "Fichiers de la comptabilité (export du logiciel) et fichier des immobilisations ;",
+          "Vos pièces originales : factures d'achat et de vente, relevés bancaires, contrats.",
+        ],
+      },
+      {
+        heading: "Réussir la transition en pratique",
+        body: [
+          "Une passation bien menée se déroule en quelques étapes simples :",
+        ],
+        bullets: [
+          "Choisissez d'abord votre nouveau cabinet et fixez la date de reprise ;",
+          "Notifiez la résiliation à l'ancienne fiduciaire par écrit, en respectant le préavis ;",
+          "Organisez le transfert du dossier complet (documents ci-dessus) au nouveau cabinet ;",
+          "Faites vérifier les déclarations déjà déposées et celles à venir sur l'exercice ;",
+          "Communiquez les nouveaux mandats (DGI, portail SIMPL, CNSS) au nouveau cabinet.",
+        ],
+      },
+      {
+        heading: "Changer pour Fiduciaire & Business Center",
+        body: [
+          "Chez Fiduciaire & Business Center, cabinet comptable à El Jadida, nous accompagnons régulièrement des entreprises qui quittent une autre fiduciaire. Nous gérons la reprise du dossier de A à Z : récupération des documents, contrôle des déclarations passées et remise à niveau si nécessaire, pour que vous n'ayez rien à gérer pendant la transition.",
+          "Le premier échange est gratuit et confidentiel : nous faisons le point sur votre situation, identifions ce qui n'allait pas et vous proposons un accompagnement clair. Changer de comptable ne doit jamais être une source de stress — c'est souvent le meilleur moyen de reprendre le contrôle de votre gestion.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Peut-on changer de comptable en cours d'année ?",
+        a: "Oui. Aucune loi ne vous oblige à rester avec une fiduciaire. Un changement en cours d'exercice est possible : le nouveau cabinet reprend les écritures depuis le début de l'exercice. Le plus simple reste toutefois de changer après la clôture et le dépôt du bilan.",
+      },
+      {
+        q: "Mon ancien comptable peut-il refuser de me rendre mes documents ?",
+        a: "Non. Vos documents comptables et pièces justificatives vous appartiennent et doivent vous être restitués. Demandez par écrit la remise complète du dossier (grand livre, balances, bilans, déclarations, export du logiciel et pièces originales).",
+      },
+      {
+        q: "Quel est le meilleur moment pour changer de fiduciaire ?",
+        a: "Idéalement juste après la clôture de l'exercice et le dépôt du bilan, pour démarrer sur un exercice complet. Évitez de basculer à quelques jours d'une échéance TVA ou IS afin de ne pas risquer un dépôt manqué pendant la passation.",
+      },
+      {
+        q: "La transition risque-t-elle d'interrompre mes déclarations ?",
+        a: "Pas si elle est préparée. En fixant la date de reprise, en récupérant l'intégralité du dossier et en transférant les mandats fiscaux au nouveau cabinet, vos déclarations continuent d'être déposées sans rupture.",
+      },
+    ],
+    related: [
+      "guides/cout-comptable-maroc",
+      "services/tenue-comptabilite",
+      "services/conseil-fiscal",
+    ],
+  },
 ];
 
 export const guideSlugs = () => guides.map((g) => g.slug);
