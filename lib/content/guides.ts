@@ -639,6 +639,99 @@ export const guides: GuidePage[] = [
       "services/declarations-fiscales",
     ],
   },
+  {
+    slug: "calendrier-fiscal-maroc-2026",
+    keyword: "calendrier fiscal Maroc 2026",
+    label: "Calendrier fiscal 2026",
+    metaTitle:
+      "Calendrier fiscal 2026 au Maroc : toutes les échéances | FBC",
+    metaDescription:
+      "Calendrier fiscal 2026 au Maroc : échéances TVA, IS, acomptes, IR et CNSS mois par mois. Dates limites de déclaration et de paiement pour ne rien oublier.",
+    h1: "Calendrier fiscal 2026 au Maroc : les échéances à ne pas manquer",
+    summary:
+      "Les principales échéances fiscales et sociales 2026 (TVA, acomptes IS, IR, CNSS) mois par mois, pour déclarer et payer dans les délais.",
+    datePublished: "2026-09-18",
+    lead: "Retards de déclaration et de paiement se traduisent vite par des majorations : au Maroc, une déclaration hors délai entraîne une pénalité de 10% et des majorations de retard. Ce guide récapitule les grandes échéances fiscales et sociales de l'année 2026, mois par mois, pour les entreprises et les indépendants. Il est donné à titre indicatif : les dates exactes dépendent de votre régime, de votre date de clôture et sont susceptibles de décalage lorsqu'elles tombent un week-end ou un jour férié.",
+    sections: [
+      {
+        heading: "Les échéances récurrentes de l'année",
+        body: [
+          "Certaines obligations reviennent chaque mois ou chaque trimestre, indépendamment de la date de clôture de votre exercice. Ce sont elles qui rythment la vie fiscale et sociale de l'entreprise :",
+        ],
+        bullets: [
+          "CNSS : déclaration et paiement des cotisations avant le 10 de chaque mois, par télédéclaration (Damancom) ;",
+          "IR sur salaires : versement mensuel de l'impôt retenu à la source sur les rémunérations, via les téléservices SIMPL ;",
+          "TVA — régime mensuel (chiffre d'affaires ≥ 1 000 000 DH) : déclaration et paiement avant le 20 du mois suivant ;",
+          "TVA — régime trimestriel (chiffre d'affaires < 1 000 000 DH) : avant le 20 du mois suivant le trimestre, soit les 20 janvier, 20 avril, 20 juillet et 20 octobre ;",
+          "Auto-entrepreneur : déclaration du chiffre d'affaires (mensuelle ou trimestrielle) et paiement de l'IR libératoire via le portail dédié.",
+        ],
+      },
+      {
+        heading: "Les grandes dates 2026, mois par mois",
+        body: [
+          "Le tableau ci-dessous synthétise les échéances les plus structurantes de 2026 pour une société dont l'exercice coïncide avec l'année civile (clôture au 31 décembre). Les déclarations et paiements se font par voie électronique, obligatoire.",
+        ],
+        table: {
+          caption: "Principales échéances fiscales et sociales 2026 (exercice = année civile)",
+          headers: ["Échéance", "Obligation", "Concernés"],
+          rows: [
+            ["31 janvier 2026", "Taxe sur les véhicules (TVM, ex-vignette)", "Propriétaires de véhicules"],
+            ["31 mars 2026", "Déclaration du résultat fiscal (IS) + 1er acompte provisionnel", "Sociétés à l'IS (clôture au 31/12)"],
+            ["30 avril 2026", "Déclaration annuelle du revenu global (IR)", "Professionnels RNR/RNS et pluri-employeurs"],
+            ["30 juin 2026", "2e acompte provisionnel de l'IS", "Sociétés à l'IS"],
+            ["30 septembre 2026", "3e acompte provisionnel de l'IS", "Sociétés à l'IS"],
+            ["30 septembre 2026", "Taxe d'habitation et taxe de services communaux", "Propriétaires et occupants"],
+            ["30 novembre 2026", "Taxe professionnelle (patente)", "Commerçants, artisans, professions libérales"],
+            ["31 décembre 2026", "4e acompte provisionnel de l'IS", "Sociétés à l'IS"],
+          ],
+        },
+      },
+      {
+        heading: "Les acomptes provisionnels de l'IS",
+        body: [
+          "L'impôt sur les sociétés se règle en quatre acomptes provisionnels, chacun égal à 25% de l'impôt de l'exercice précédent. Pour un exercice clôturé au 31 décembre, ils sont dus avant la fin des 3e, 6e, 9e et 12e mois de l'exercice, soit les 31 mars, 30 juin, 30 septembre et 31 décembre.",
+          "La régularisation intervient au moment de la déclaration du résultat fiscal, dans les trois mois qui suivent la clôture. Si votre exercice ne suit pas l'année civile, décalez ces dates en conséquence : la logique des 3e, 6e, 9e et 12e mois reste la même.",
+        ],
+      },
+      {
+        heading: "Quand une échéance tombe un week-end ou un jour férié",
+        body: [
+          "Lorsqu'une date limite coïncide avec un samedi, un dimanche ou un jour férié, elle est automatiquement reportée au premier jour ouvrable suivant. C'est pourquoi certaines échéances de fin de mois sont communiquées par la DGI au 1er du mois suivant.",
+          "En pratique, mieux vaut ne pas attendre le dernier jour : les téléservices peuvent connaître des pics de charge, et un paiement rejeté la veille de l'échéance vous expose aux majorations.",
+        ],
+      },
+      {
+        heading: "Ne plus jamais manquer une échéance",
+        body: [
+          "Le suivi du calendrier fiscal fait partie intégrante de notre mission. Fiduciaire & Business Center, cabinet comptable à El Jadida, tient votre échéancier, prépare et télétransmet vos déclarations, et vous alerte en amont de chaque date importante — vous vous concentrez sur votre activité, nous veillons sur les délais.",
+          "Ce calendrier est fourni à titre indicatif et peut évoluer selon les communiqués de la DGI et votre situation particulière. Confirmez vos échéances avec le cabinet avant toute décision.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Quand faut-il déclarer la TVA au Maroc en 2026 ?",
+        a: "Sous le régime mensuel (chiffre d'affaires ≥ 1 000 000 DH), la déclaration et le paiement se font avant le 20 du mois suivant. Sous le régime trimestriel (chiffre d'affaires < 1 000 000 DH), avant le 20 du mois suivant le trimestre : 20 janvier, 20 avril, 20 juillet et 20 octobre.",
+      },
+      {
+        q: "Quelles sont les dates des acomptes provisionnels de l'IS ?",
+        a: "Pour une société dont l'exercice coïncide avec l'année civile, les quatre acomptes sont dus au plus tard les 31 mars, 30 juin, 30 septembre et 31 décembre. Chaque acompte est égal à 25% de l'impôt de l'exercice précédent.",
+      },
+      {
+        q: "Quand payer les cotisations CNSS ?",
+        a: "Les cotisations CNSS se déclarent et se paient avant le 10 de chaque mois, par télédéclaration via le portail Damancom.",
+      },
+      {
+        q: "Que se passe-t-il si je dépose ma déclaration en retard ?",
+        a: "Une déclaration ou un paiement hors délai entraîne une pénalité de 10% ainsi que des majorations de retard. Anticiper les échéances et confier le suivi à un cabinet évite ces coûts inutiles.",
+      },
+    ],
+    related: [
+      "services/declarations-fiscales",
+      "guides/taux-tva-maroc-2026",
+      "guides/taux-is-maroc-2026",
+    ],
+  },
 ];
 
 export const guideSlugs = () => guides.map((g) => g.slug);
