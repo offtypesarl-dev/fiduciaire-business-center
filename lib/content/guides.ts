@@ -732,6 +732,96 @@ export const guides: GuidePage[] = [
       "guides/taux-is-maroc-2026",
     ],
   },
+  {
+    slug: "cout-comptable-maroc",
+    keyword: "coût comptable Maroc",
+    label: "Coût d'un comptable",
+    metaTitle:
+      "Combien coûte un comptable au Maroc ? Prix et facteurs | FBC",
+    metaDescription:
+      "Combien coûte un comptable ou une fiduciaire au Maroc ? Les facteurs de prix, les modes de facturation et comment obtenir un devis juste et gratuit.",
+    h1: "Combien coûte un comptable au Maroc ?",
+    summary:
+      "Ce qui détermine les honoraires d'un comptable ou d'une fiduciaire au Maroc, les modes de facturation et comment obtenir un devis adapté à votre activité.",
+    datePublished: "2026-09-18",
+    lead: "« Combien ça coûte ? » est la première question de tout entrepreneur qui cherche un comptable. La réponse honnête : cela dépend. Les honoraires d'une fiduciaire ne sont pas réglementés au Maroc — chaque cabinet fixe librement ses tarifs, en fonction de votre volume d'activité et des missions confiées. Ce guide explique ce qui fait varier le prix, comment les cabinets facturent, et comment obtenir un devis juste plutôt que le simple « prix le plus bas ».",
+    sections: [
+      {
+        heading: "Pourquoi il n'existe pas de tarif unique",
+        body: [
+          "Contrairement à certaines professions, les honoraires comptables ne suivent aucun barème officiel au Maroc. Deux entreprises du même secteur peuvent payer des montants très différents selon le volume de pièces à traiter, le nombre de salariés ou l'étendue du conseil attendu. Un devis sérieux part donc toujours de votre situation réelle, jamais d'un tarif affiché à l'avance.",
+          "C'est aussi pourquoi comparer deux cabinets sur le seul prix mensuel est trompeur : encore faut-il comparer ce que chaque forfait inclut réellement (déclarations, bilan, paie, conseil).",
+        ],
+      },
+      {
+        heading: "Les facteurs qui font varier vos honoraires",
+        body: [
+          "Le prix d'une fiduciaire dépend principalement des éléments suivants :",
+        ],
+        table: {
+          caption: "Ce qui influence le coût d'un comptable",
+          headers: ["Facteur", "Effet sur le prix"],
+          rows: [
+            ["Volume d'écritures (factures, ventes, achats)", "Plus le volume est élevé, plus la tenue demande de temps"],
+            ["Régime fiscal et forme juridique (auto-entrepreneur, SARL, SARL AU)", "Une société à l'IS implique plus d'obligations qu'un auto-entrepreneur"],
+            ["Assujettissement à la TVA et périodicité (mensuelle/trimestrielle)", "Ajoute des déclarations récurrentes"],
+            ["Nombre de salariés et gestion de la paie", "La paie et les déclarations CNSS se facturent souvent au bulletin"],
+            ["Étendue des missions (bilan, audit, conseil, création)", "Missions ponctuelles facturées en plus du forfait courant"],
+            ["Qualité et régularité de vos pièces", "Une comptabilité bien tenue en amont réduit le temps de traitement"],
+          ],
+        },
+      },
+      {
+        heading: "Comment les cabinets facturent au Maroc",
+        body: [
+          "La plupart des fiduciaires proposent un abonnement mensuel qui couvre la tenue comptable courante et les déclarations fiscales récurrentes. À côté de ce forfait, certaines prestations sont généralement facturées séparément :",
+        ],
+        bullets: [
+          "Forfait mensuel : tenue de la comptabilité, TVA et suivi courant ;",
+          "Bilan et liasse fiscale de fin d'exercice : souvent facturés à part ;",
+          "Gestion de la paie : fréquemment tarifée au bulletin et par salarié ;",
+          "Missions ponctuelles : création de société, audit, conseil, assistance en cas de contrôle.",
+        ],
+      },
+      {
+        heading: "Fiduciaire, expert-comptable : quelle différence de coût ?",
+        body: [
+          "Une fiduciaire gère la comptabilité, la fiscalité et le social de plusieurs entreprises clientes : c'est la solution la plus répandue et la plus économique pour les TPE, PME et indépendants. L'expert-comptable, inscrit à l'Ordre, est seul habilité à certifier des comptes et à réaliser certaines missions réglementées ; ses honoraires sont en général plus élevés.",
+          "Pour la grande majorité des petites structures, une fiduciaire fiable couvre l'ensemble des besoins courants. Lorsqu'une certification est nécessaire, elle peut travailler en lien avec un expert-comptable pour les missions qui exigent sa signature.",
+        ],
+      },
+      {
+        heading: "Le vrai coût : celui des erreurs évitées",
+        body: [
+          "Le comptable le moins cher n'est pas toujours le plus économique. Une déclaration hors délai entraîne une pénalité de 10% et des majorations ; un mauvais choix de régime ou un redressement peuvent coûter bien davantage que l'écart d'honoraires entre deux cabinets. La valeur d'un bon accompagnement se mesure autant à ce qu'il vous fait éviter qu'à ce qu'il vous facture.",
+          "Chez Fiduciaire & Business Center, cabinet comptable à El Jadida, le premier échange est gratuit : nous évaluons votre volume, vos obligations et vos besoins réels, puis nous vous remettons un devis clair et adapté — sans engagement.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Combien coûte un comptable au Maroc ?",
+        a: "Il n'existe pas de tarif unique : les honoraires ne sont pas réglementés et dépendent de votre volume d'écritures, de votre régime fiscal, du nombre de salariés et des missions confiées. Le plus fiable est de demander un devis basé sur votre situation réelle.",
+      },
+      {
+        q: "Comment les fiduciaires facturent-elles leurs services ?",
+        a: "Le plus souvent sous forme d'un abonnement mensuel couvrant la tenue comptable et les déclarations courantes, avec une facturation à part pour le bilan de fin d'exercice, la paie (au bulletin) et les missions ponctuelles comme la création ou l'audit.",
+      },
+      {
+        q: "Vaut-il mieux choisir le cabinet le moins cher ?",
+        a: "Pas nécessairement. Comparez d'abord ce que chaque forfait inclut réellement. Une comptabilité mal suivie expose à des pénalités et des redressements qui coûtent souvent plus cher que l'économie réalisée sur les honoraires.",
+      },
+      {
+        q: "Le devis est-il gratuit ?",
+        a: "Oui. Chez Fiduciaire & Business Center, le premier échange et le devis sont gratuits et sans engagement : nous partons de votre activité réelle pour vous proposer un accompagnement adapté.",
+      },
+    ],
+    related: [
+      "guides/cout-creation-entreprise-maroc",
+      "services/tenue-comptabilite",
+      "guides/auto-entrepreneur-ou-sarl",
+    ],
+  },
 ];
 
 export const guideSlugs = () => guides.map((g) => g.slug);
