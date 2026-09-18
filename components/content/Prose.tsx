@@ -1,11 +1,12 @@
 import type { Section } from "@/lib/content/types";
+import { headingId } from "@/lib/content/toc";
 
 /** Renders an ordered list of content sections (H2 + paragraphs + bullets + table). */
 export default function Prose({ sections }: { sections: Section[] }) {
   return (
     <div className="space-y-12">
       {sections.map((s, i) => (
-        <section key={i} className="scroll-mt-28">
+        <section key={i} id={headingId(s.heading, i)} className="scroll-mt-28">
           <h2 className="h-display text-2xl text-navy-900 md:text-3xl">
             {s.heading}
           </h2>

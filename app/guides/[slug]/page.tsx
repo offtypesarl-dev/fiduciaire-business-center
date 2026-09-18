@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import Breadcrumbs from "@/components/content/Breadcrumbs";
 import Prose from "@/components/content/Prose";
+import TableOfContents from "@/components/content/TableOfContents";
 import StaticFaq from "@/components/content/StaticFaq";
 import CtaBand from "@/components/content/CtaBand";
 import RelatedLinks from "@/components/content/RelatedLinks";
@@ -113,6 +114,7 @@ export default function GuidePageRoute({
         </header>
 
         <div className="container max-w-3xl py-16 md:py-20">
+          <TableOfContents sections={g.sections} />
           <Prose sections={g.sections} />
           <StaticFaq items={g.faq} />
           <CtaBand
