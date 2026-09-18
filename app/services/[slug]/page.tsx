@@ -9,6 +9,7 @@ import StaticFaq from "@/components/content/StaticFaq";
 import CtaBand from "@/components/content/CtaBand";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import { services, getService, serviceSlugs } from "@/lib/content/services";
+import { getGuide } from "@/lib/content/guides";
 import {
   absUrl,
   breadcrumbLd,
@@ -75,6 +76,16 @@ export default function ServicePageRoute({
       desc: r!.summary,
     }));
 
+  // Flow link equity to topically-relevant high-intent guides.
+  const guideItems = (s.relatedGuides ?? [])
+    .map((slug) => getGuide(slug))
+    .filter(Boolean)
+    .map((g) => ({
+      href: `/guides/${g!.slug}`,
+      label: g!.label,
+      desc: g!.summary,
+    }));
+
   const jsonLd = [
     breadcrumbLd(crumbs),
     serviceLd({
@@ -115,6 +126,9 @@ export default function ServicePageRoute({
             waMessage={`Bonjour, je souhaite un devis pour : ${s.label}.`}
           />
           <RelatedLinks title="Services associés" items={relatedItems} />
+          {guideItems.length > 0 && (
+            <RelatedLinks title="Guides utiles" items={guideItems} />
+          )}
         </div>
       </article>
 

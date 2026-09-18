@@ -69,6 +69,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["declarations-fiscales", "audit-revision", "conseil-gestion"],
+    relatedGuides: ["cout-comptable-maroc", "changer-de-comptable-maroc", "calendrier-fiscal-maroc-2026"],
   },
   {
     slug: "creation-entreprise",
@@ -137,6 +138,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["conseil-fiscal", "tenue-comptabilite", "domiciliation"],
+    relatedGuides: ["creer-sarl-maroc", "cout-creation-entreprise-maroc", "auto-entrepreneur-ou-sarl"],
   },
   {
     slug: "conseil-fiscal",
@@ -212,6 +214,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["declarations-fiscales", "tenue-comptabilite", "conseil-gestion"],
+    relatedGuides: ["taux-is-maroc-2026", "bareme-ir-maroc-2026", "taux-tva-maroc-2026"],
   },
   {
     slug: "declarations-fiscales",
@@ -287,6 +290,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["tenue-comptabilite", "conseil-fiscal", "gestion-paie"],
+    relatedGuides: ["calendrier-fiscal-maroc-2026", "taux-tva-maroc-2026", "taux-is-maroc-2026"],
   },
   {
     slug: "gestion-paie",
@@ -361,6 +365,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["declarations-fiscales", "tenue-comptabilite", "creation-entreprise"],
+    relatedGuides: ["bareme-ir-maroc-2026", "calendrier-fiscal-maroc-2026"],
   },
   {
     slug: "audit-revision",
@@ -425,6 +430,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["tenue-comptabilite", "conseil-fiscal", "conseil-gestion"],
+    relatedGuides: ["cout-comptable-maroc", "taux-is-maroc-2026"],
   },
   {
     slug: "domiciliation",
@@ -494,6 +500,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["creation-entreprise", "tenue-comptabilite", "auto-entrepreneur"],
+    relatedGuides: ["creer-sarl-maroc", "cout-creation-entreprise-maroc"],
   },
   {
     slug: "conseil-gestion",
@@ -559,6 +566,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["tenue-comptabilite", "conseil-fiscal", "audit-revision"],
+    relatedGuides: ["cout-comptable-maroc", "changer-de-comptable-maroc"],
   },
   {
     slug: "auto-entrepreneur",
@@ -633,6 +641,7 @@ export const services: ServicePage[] = [
       },
     ],
     related: ["creation-entreprise", "conseil-fiscal", "domiciliation"],
+    relatedGuides: ["auto-entrepreneur-ou-sarl", "bareme-ir-maroc-2026", "taux-tva-maroc-2026"],
   },
 ];
 

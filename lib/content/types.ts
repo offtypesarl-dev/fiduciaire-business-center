@@ -33,6 +33,8 @@ export type ServicePage = {
   faq: FaqItem[];
   /** Related service slugs for internal linking. */
   related: string[];
+  /** Topically relevant guide slugs (flows link equity to high-intent guides). */
+  relatedGuides?: string[];
 };
 
 export type CityPage = {
