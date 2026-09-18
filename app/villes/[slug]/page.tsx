@@ -69,8 +69,10 @@ export default function CityPageRoute({
       desc: n!.summary,
     }));
 
-  // Surface top services on every city page for the internal-link mesh.
-  const serviceItems = services.slice(0, 6).map((s) => ({
+  // Surface the full service catalogue on every city page: a natural
+  // "everything we handle here" block that also gives all services — not just
+  // the first six — inbound internal links from every city (no orphaned pages).
+  const serviceItems = services.map((s) => ({
     href: `/services/${s.slug}`,
     label: s.label,
     desc: s.summary,
