@@ -10,7 +10,7 @@ import CtaBand from "@/components/content/CtaBand";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import { getGuide, guideSlugs, guides } from "@/lib/content/guides";
 import { getService } from "@/lib/content/services";
-import { absUrl, breadcrumbLd, articleLd, faqLdFrom } from "@/lib/seo";
+import { absUrl, breadcrumbLd, articleLd, faqLdFrom, ogImages, twitterImages } from "@/lib/seo";
 
 export function generateStaticParams() {
   return guideSlugs().map((slug) => ({ slug }));
@@ -35,11 +35,13 @@ export function generateMetadata({
       description: g.metaDescription,
       url: absUrl(path),
       publishedTime: g.datePublished,
+      images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
       title: g.metaTitle,
       description: g.metaDescription,
+      images: twitterImages,
     },
   };
 }

@@ -10,7 +10,7 @@ import CtaBand from "@/components/content/CtaBand";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import { getCity, citySlugs } from "@/lib/content/cities";
 import { services } from "@/lib/content/services";
-import { absUrl, breadcrumbLd, serviceLd, faqLdFrom } from "@/lib/seo";
+import { absUrl, breadcrumbLd, serviceLd, faqLdFrom, ogImages, twitterImages } from "@/lib/seo";
 
 export function generateStaticParams() {
   return citySlugs().map((slug) => ({ slug }));
@@ -34,11 +34,13 @@ export function generateMetadata({
       title: c.metaTitle,
       description: c.metaDescription,
       url: absUrl(path),
+      images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
       title: c.metaTitle,
       description: c.metaDescription,
+      images: twitterImages,
     },
   };
 }

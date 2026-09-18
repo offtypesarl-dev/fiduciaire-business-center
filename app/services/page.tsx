@@ -6,7 +6,7 @@ import FloatingActions from "@/components/FloatingActions";
 import Breadcrumbs from "@/components/content/Breadcrumbs";
 import CtaBand from "@/components/content/CtaBand";
 import { services } from "@/lib/content/services";
-import { absUrl, breadcrumbLd } from "@/lib/seo";
+import { absUrl, breadcrumbLd, ogImages } from "@/lib/seo";
 
 const path = "/services";
 
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "Comptabilité, création d'entreprise, conseil fiscal, paie, audit et domiciliation à El Jadida et dans tout le Maroc.",
     url: absUrl(path),
+    images: ogImages,
   },
 };
 

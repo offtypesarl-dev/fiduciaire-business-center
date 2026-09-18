@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import Contact from "@/components/Contact";
 import Breadcrumbs from "@/components/content/Breadcrumbs";
-import { absUrl, breadcrumbLd } from "@/lib/seo";
+import { absUrl, breadcrumbLd, ogImages } from "@/lib/seo";
 
 const path = "/contact";
 
@@ -20,6 +20,7 @@ export const metadata: Metadata = {
     description:
       "Contactez Fiduciaire & Business Center à El Jadida. Premier échange gratuit.",
     url: absUrl(path),
+    images: ogImages,
   },
 };
 

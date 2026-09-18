@@ -198,6 +198,20 @@ export function absUrl(path: string) {
   return `${SITE_URL}${clean === "/" ? "" : clean}`;
 }
 
+/**
+ * Shared social-preview image. Next.js merges `metadata.openGraph` shallowly:
+ * a page that re-declares `openGraph` (or `twitter`) drops the parent's images.
+ * Spread these into every page's openGraph/twitter so no page ships imageless.
+ */
+export const OG_IMAGE = {
+  url: "/og.png",
+  width: 1600,
+  height: 448,
+  alt: "Fiduciaire & Business Center — cabinet comptable à El Jadida",
+} as const;
+export const ogImages = [OG_IMAGE];
+export const twitterImages = [OG_IMAGE.url];
+
 /** BreadcrumbList JSON-LD. Pass ordered [{name, path}] from home to current. */
 export function breadcrumbLd(items: { name: string; path: string }[]) {
   return {

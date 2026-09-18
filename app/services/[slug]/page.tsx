@@ -14,6 +14,8 @@ import {
   breadcrumbLd,
   serviceLd,
   faqLdFrom,
+  ogImages,
+  twitterImages,
 } from "@/lib/seo";
 
 export function generateStaticParams() {
@@ -38,11 +40,13 @@ export function generateMetadata({
       title: s.metaTitle,
       description: s.metaDescription,
       url: absUrl(path),
+      images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
       title: s.metaTitle,
       description: s.metaDescription,
+      images: twitterImages,
     },
   };
 }

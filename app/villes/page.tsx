@@ -6,7 +6,7 @@ import FloatingActions from "@/components/FloatingActions";
 import Breadcrumbs from "@/components/content/Breadcrumbs";
 import CtaBand from "@/components/content/CtaBand";
 import { cities } from "@/lib/content/cities";
-import { absUrl, breadcrumbLd } from "@/lib/seo";
+import { absUrl, breadcrumbLd, ogImages } from "@/lib/seo";
 
 const path = "/villes";
 
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "Cabinet comptable à El Jadida au service des entreprises de toute la région.",
     url: absUrl(path),
+    images: ogImages,
   },
 };
 

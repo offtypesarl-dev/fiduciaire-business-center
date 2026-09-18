@@ -6,7 +6,7 @@ import FloatingActions from "@/components/FloatingActions";
 import Breadcrumbs from "@/components/content/Breadcrumbs";
 import CtaBand from "@/components/content/CtaBand";
 import { guides } from "@/lib/content/guides";
-import { absUrl, breadcrumbLd } from "@/lib/seo";
+import { absUrl, breadcrumbLd, ogImages } from "@/lib/seo";
 
 const path = "/guides";
 
@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     description:
       "Guides pratiques 2026 pour créer et gérer votre entreprise au Maroc.",
     url: absUrl(path),
+    images: ogImages,
   },
 };
 

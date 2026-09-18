@@ -7,7 +7,7 @@ import Prose from "@/components/content/Prose";
 import CtaBand from "@/components/content/CtaBand";
 import RelatedLinks from "@/components/content/RelatedLinks";
 import type { Section } from "@/lib/content/types";
-import { absUrl, breadcrumbLd, BUSINESS } from "@/lib/seo";
+import { absUrl, breadcrumbLd, BUSINESS, ogImages } from "@/lib/seo";
 
 const path = "/a-propos";
 
@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     description:
       "Cabinet comptable et de conseil à El Jadida, fondé en 2015 par Adil Obbad.",
     url: absUrl(path),
+    images: ogImages,
   },
 };
 
