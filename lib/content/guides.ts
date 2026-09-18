@@ -820,6 +820,7 @@ export const guides: GuidePage[] = [
       "guides/cout-creation-entreprise-maroc",
       "services/tenue-comptabilite",
       "guides/auto-entrepreneur-ou-sarl",
+      "guides/changer-de-comptable-maroc",
     ],
   },
   {
