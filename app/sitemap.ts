@@ -42,6 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   const legal: MetadataRoute.Sitemap = [
+    entry("/plan-du-site", 0.3, "monthly"),
     entry("/mentions-legales", 0.3, "yearly"),
     entry("/confidentialite", 0.3, "yearly"),
     entry("/conditions-generales", 0.3, "yearly"),

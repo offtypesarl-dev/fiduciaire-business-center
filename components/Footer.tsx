@@ -96,6 +96,9 @@ export default function Footer() {
             <Link href={legalRoutes.conditions} className="hover:text-brand-light">
               {t.footer.terms}
             </Link>
+            <Link href="/plan-du-site" className="hover:text-brand-light">
+              {lang === "fr" ? "Plan du site" : "Sitemap"}
+            </Link>
           </nav>
           <div className="flex flex-col items-center justify-between gap-3 text-xs text-white/40 sm:flex-row">
             <p>
