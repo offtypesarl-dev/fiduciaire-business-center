@@ -4,8 +4,13 @@ import { serviceSlugs } from "@/lib/content/services";
 import { citySlugs } from "@/lib/content/cities";
 import { guideSlugs } from "@/lib/content/guides";
 
+// Stable last-modified date, bumped only when content actually changes.
+// Using build time here would falsely signal every URL as "just modified" on
+// each deploy, which devalues lastmod as a freshness signal to search engines.
+const CONTENT_LAST_MODIFIED = new Date("2026-09-18T00:00:00Z");
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const now = CONTENT_LAST_MODIFIED;
   const entry = (
     path: string,
     priority: number,
